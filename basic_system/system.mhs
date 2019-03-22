@@ -14,10 +14,11 @@
  PORT RS232_Uart_1_sout = RS232_Uart_1_sout, DIR = O
  PORT RS232_Uart_1_sin = RS232_Uart_1_sin, DIR = I
  PORT RESET = RESET, DIR = I, SIGIS = RST, RST_POLARITY = 0
- PORT LEDS_TRI_O = LEDS_TRI_O, DIR = O, VEC = [0:7]
+ PORT LEDS_TRI_O = my_pheripherial_0_LED_Data, DIR = O, VEC = [0:7]
  PORT DIP_Switches_TRI_I = DIP_Switches_TRI_I, DIR = I, VEC = [0:7]
  PORT CLK_P = CLK, DIR = I, DIFFERENTIAL_POLARITY = P, SIGIS = CLK, CLK_FREQ = 50000000
  PORT CLK_N = CLK, DIR = I, DIFFERENTIAL_POLARITY = N, SIGIS = CLK, CLK_FREQ = 50000000
+ PORT my_pheripherial_0_DIP_Data_pin = net_my_pheripherial_0_DIP_Data_pin, DIR = I, VEC = [7:0]
 
 
 BEGIN proc_sys_reset
@@ -170,5 +171,15 @@ BEGIN axi_gpio
  BUS_INTERFACE S_AXI = axi4lite_0
  PORT S_AXI_ACLK = clk_100_0000MHz
  PORT GPIO_IO_I = DIP_Switches_TRI_I
+END
+
+BEGIN my_pheripherial
+ PARAMETER INSTANCE = my_pheripherial_0
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0x79a00000
+ PARAMETER C_HIGHADDR = 0x79a0ffff
+ PORT S_AXI_ACLK = clk_100_0000MHz
+ PORT DIP_Data = DIP_Switches_TRI_I
+ PORT LED_Data = my_pheripherial_0_LED_Data
 END
 

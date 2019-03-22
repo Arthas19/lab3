@@ -1,6 +1,6 @@
 Release 14.6 - xst P.68d (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
---> Parameter TMPDIR set to D:\ra89-2016\lprs2\lab3\basic_system\synthesis\xst_temp_dir\
+--> Parameter TMPDIR set to D:\folderi_sa_D\RA159-2016\LPRS2\lab3\basic_system\synthesis\xst_temp_dir\
 
 
 Total REAL time to Xst completion: 0.00 secs
@@ -35,7 +35,7 @@ TABLE OF CONTENTS
 ---- Source Parameters
 Input Format                       : MIXED
 Input File Name                    : "system_axi4lite_0_wrapper_xst.prj"
-Verilog Include Directory          : {"D:\ra89-2016\lprs2\lab3\basic_system\pcores\" "C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
+Verilog Include Directory          : {"D:\folderi_sa_D\RA159-2016\LPRS2\lab3\basic_system\pcores\" "C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\14.6\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
 
 ---- Target Parameters
 Target Device                      : xc6slx45fgg676-2
@@ -183,7 +183,7 @@ Analyzing Verilog file "C:/Xilinx/14.6/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores
 Parsing module <ict106_w_upsizer>.
 Analyzing Verilog file "C:/Xilinx/14.6/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_interconnect_v1_06_a/hdl/verilog/axi_interconnect.v" into library axi_interconnect_v1_06_a
 Parsing module <axi_interconnect>.
-Analyzing Verilog file "D:\ra89-2016\lprs2\lab3\basic_system\hdl\system_axi4lite_0_wrapper.v" into library work
+Analyzing Verilog file "D:\folderi_sa_D\RA159-2016\LPRS2\lab3\basic_system\hdl\system_axi4lite_0_wrapper.v" into library work
 Parsing module <system_axi4lite_0_wrapper>.
 
 =========================================================================
@@ -383,7 +383,7 @@ WARNING:HDLCompiler:413 - "C:/Xilinx/14.6/ISE_DS/EDK/hw/XilinxProcessorIPLib/pco
 =========================================================================
 
 Synthesizing Unit <system_axi4lite_0_wrapper>.
-    Related source file is "D:\ra89-2016\lprs2\lab3\basic_system\hdl\system_axi4lite_0_wrapper.v".
+    Related source file is "D:\folderi_sa_D\RA159-2016\LPRS2\lab3\basic_system\hdl\system_axi4lite_0_wrapper.v".
     Summary:
 	no macro.
 Unit <system_axi4lite_0_wrapper> synthesized.
@@ -2251,11 +2251,11 @@ axi4lite_0/si_converter_bank/gen_conv_slot[0].clock_conv_inst/S_AXI_ACLK|    1.6
 
 
 Total REAL time to Xst completion: 10.00 secs
-Total CPU time to Xst completion: 9.91 secs
+Total CPU time to Xst completion: 10.21 secs
  
 --> 
 
-Total memory usage is 289712 kilobytes
+Total memory usage is 289840 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :  272 (   0 filtered)
